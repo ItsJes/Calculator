@@ -1,6 +1,6 @@
 # Calculator
 
-**Calculator built for coding challegen for Digital Factory**
+**Calculator built for coding challenge for Digital Factory**
 
 ## Requirements
 
