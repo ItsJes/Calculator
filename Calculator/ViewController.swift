@@ -90,7 +90,6 @@ class ViewController: UIViewController {
         
         var result: Double
         var resultString: String
-        
         let expression = NSExpression(format: trackingString)
         result = expression.expressionValue(with: nil, context: nil) as! Double
          
