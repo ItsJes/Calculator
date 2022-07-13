@@ -24,15 +24,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    func clear()
-    {
+    func clear() {
+        
         currentString = ""
         trackingString = "0"
         input.text = "0"
         output.text = "0"
     }
-    func formatResult(result: Double) -> String
-    {
+    func formatResult(result: Double) -> String {
         if(result.truncatingRemainder(dividingBy: 1) == 0)
         {
             return String(format: "%.0f", result)
@@ -43,8 +42,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func addToStr(value: String)
-    {
+    func addToStr(value: String) {
         currentString = currentString + value
         trackingString = trackingString + value
         input.text = currentString
