@@ -25,19 +25,16 @@ class ViewController: UIViewController {
     }
     
     func clear() {
-        
         currentString = ""
         trackingString = "0"
         input.text = "0"
         output.text = "0"
     }
     func formatResult(result: Double) -> String {
-        if(result.truncatingRemainder(dividingBy: 1) == 0)
-        {
+        if(result.truncatingRemainder(dividingBy: 1) == 0){
             return String(format: "%.0f", result)
         }
-        else
-        {
+        else{
             return String(format: "%.5f", result)
         }
     }
@@ -125,10 +122,10 @@ class ViewController: UIViewController {
             var result = expression.expressionValue(with: nil, context: nil) as! Double
             
             if(radDegLabel.text == "RAD"){
-                result = tangent(x: result)
+                result = tan(result)
             }
             else{
-                result = tangent(x: ((result / 180) * .pi))
+                result = tan(((result / 180) * .pi))
                 
             }
             let resultString = formatResult(result: result)
@@ -151,10 +148,10 @@ class ViewController: UIViewController {
             var result = expression.expressionValue(with: nil, context: nil) as! Double
             
             if(radDegLabel.text == "RAD"){
-                result = cosine(x: result)
+                result = cos(result)
             }
             else{
-                result = cosine(x: ((result / 180) * .pi))
+                result = cos(((result / 180) * .pi))
                 
             }
             
@@ -177,10 +174,10 @@ class ViewController: UIViewController {
             var result = expression.expressionValue(with: nil, context: nil) as! Double
 
             if(radDegLabel.text == "RAD"){
-                result = sine(x: result)
+                result = sin(result)
             }
             else{
-                result = sine(x: ((result / 180) * .pi))
+                result = sin(((result / 180) * .pi))
                 
             }
             
@@ -192,61 +189,10 @@ class ViewController: UIViewController {
             currentString = ""
         }
     }
-    @IBAction func nineButton(_ sender: Any) {
-        addToStr(value: "9")
+    
+    @IBAction func numberButtonPressed(_ sender: Any) {
+        addToStr(value: (sender as! UIButton).titleLabel?.text ?? "")
     }
-    
-    
-    @IBAction func eightButton(_ sender: Any) {
-        addToStr(value: "8")
-    }
-    
-    @IBAction func sevenButton(_ sender: Any) {
-        addToStr(value: "7")
-    }
-    
-    @IBAction func sixButton(_ sender: Any) {
-        addToStr(value: "6")
-    }
-    
-    @IBAction func fiveButton(_ sender: Any) {
-        addToStr(value: "5")
-    }
-    
-    @IBAction func fourButton(_ sender: Any) {
-        addToStr(value: "4")
-    }
-    
-    
-    @IBAction func threeButton(_ sender: Any) {
-        addToStr(value: "3")
-    }
-    
-    @IBAction func twoButton(_ sender: Any) {
-        addToStr(value: "2")
-    }
-    
-    
-    @IBAction func oneButton(_ sender: Any) {
-        addToStr(value: "1")
-    }
-    
-    @IBAction func zeroButton(_ sender: Any) {
-        addToStr(value: "0")
-    }
-    
-    @objc func sine(x: Double) -> Double{
-        return(sin(x))
-    }
-    
-    @objc func cosine(x: Double) -> Double{
-        return(cos(x))
-    }
-    
-    @objc func tangent(x: Double) -> Double{
-        return(tan(x))
-    }
-    
 }
 
 
