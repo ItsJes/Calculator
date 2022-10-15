@@ -1,10 +1,8 @@
 # Calculator
 
-**Calculator built for coding challenge for Digital Factory**
-
 ## Requirements
 
-iOS Challenge Requirements - The challenge is due five days upon receiving. The position is competitive, completing the challenge sooner is to your advantage. Once completed, send the challenge to padapa@dgtl-factory.com. You will be contacted once it has been reviewed. Passing the challenge will lead to a final interview.
+iOS Challenge Requirements:
 
 
 • Build a basic calculator app in Swift  
