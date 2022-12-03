@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     
     var currentString: String = ""
     //var currentResult: Double!
-    var trackingString: String = "0"
+    var trackingString: String = ""
     
     
     override func viewDidLoad() {
@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     
     func clear() {
         currentString = ""
-        trackingString = "0"
+        trackingString = ""
         input.text = "0"
         output.text = "0"
     }
