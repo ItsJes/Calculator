@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FB164E522875746A00458255 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB164E522875746A00458255 /* iKaiMae Calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iKaiMae Calc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB164E552875746B00458255 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB164E572875746B00458255 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FB164E592875746B00458255 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		FB164E532875746A00458255 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FB164E522875746A00458255 /* Calculator.app */,
+				FB164E522875746A00458255 /* iKaiMae Calc.app */,
 				FB164E682875746C00458255 /* CalculatorTests.xctest */,
 				FB164E722875746C00458255 /* CalculatorUITests.xctest */,
 			);
@@ -130,9 +130,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FB164E512875746A00458255 /* Calculator */ = {
+		FB164E512875746A00458255 /* iKaiMae Calc */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FB164E7C2875746C00458255 /* Build configuration list for PBXNativeTarget "Calculator" */;
+			buildConfigurationList = FB164E7C2875746C00458255 /* Build configuration list for PBXNativeTarget "iKaiMae Calc" */;
 			buildPhases = (
 				FB164E4E2875746A00458255 /* Sources */,
 				FB164E4F2875746A00458255 /* Frameworks */,
@@ -142,9 +142,9 @@
 			);
 			dependencies = (
 			);
-			name = Calculator;
+			name = "iKaiMae Calc";
 			productName = Calculator;
-			productReference = FB164E522875746A00458255 /* Calculator.app */;
+			productReference = FB164E522875746A00458255 /* iKaiMae Calc.app */;
 			productType = "com.apple.product-type.application";
 		};
 		FB164E672875746C00458255 /* CalculatorTests */ = {
@@ -220,7 +220,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FB164E512875746A00458255 /* Calculator */,
+				FB164E512875746A00458255 /* iKaiMae Calc */,
 				FB164E672875746C00458255 /* CalculatorTests */,
 				FB164E712875746C00458255 /* CalculatorUITests */,
 			);
@@ -287,12 +287,12 @@
 /* Begin PBXTargetDependency section */
 		FB164E6A2875746C00458255 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FB164E512875746A00458255 /* Calculator */;
+			target = FB164E512875746A00458255 /* iKaiMae Calc */;
 			targetProxy = FB164E692875746C00458255 /* PBXContainerItemProxy */;
 		};
 		FB164E742875746C00458255 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FB164E512875746A00458255 /* Calculator */;
+			target = FB164E512875746A00458255 /* iKaiMae Calc */;
 			targetProxy = FB164E732875746C00458255 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -438,23 +438,27 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.6;
 				DEVELOPMENT_TEAM = 27CB9ZMPF6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Calculator/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "iKaiMae iCalc";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "jsendejo.kgieser.dsendejo.LVLUP.Calculator-BasCalculatorSinCosTan";
+				MARKETING_VERSION = 1.6;
+				PRODUCT_BUNDLE_IDENTIFIER = jsendejo.kgieser.dsendejo.iKaiMae.iCalc.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -469,23 +473,27 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.6;
 				DEVELOPMENT_TEAM = 27CB9ZMPF6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Calculator/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "iKaiMae iCalc";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "jsendejo.kgieser.dsendejo.LVLUP.Calculator-BasCalculatorSinCosTan";
+				MARKETING_VERSION = 1.6;
+				PRODUCT_BUNDLE_IDENTIFIER = jsendejo.kgieser.dsendejo.iKaiMae.iCalc.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -580,7 +588,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FB164E7C2875746C00458255 /* Build configuration list for PBXNativeTarget "Calculator" */ = {
+		FB164E7C2875746C00458255 /* Build configuration list for PBXNativeTarget "iKaiMae Calc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FB164E7D2875746C00458255 /* Debug */,
